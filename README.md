@@ -2,6 +2,8 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
+<h1 align="center">whatsapp bot with Open Ai integration</h1>
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
@@ -96,3 +98,46 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## Sample .env file
+
+Create a `.env` file in your project root with the following keys (replace with your actual values):
+
+```env
+WHATSAPP_CHALLANGE_KEY=your_whatsapp_challenge_key
+WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
+WHATSAPP_API_KRY=your_whatsapp_api_key
+WHATSAPP_API_VERSION=vXX.X
+OPENAI_API_KEY=your_openai_api_key
+```
+
+## Project Structure
+
+```
+whatsapp_bot/
+├── src/
+│   ├── app.controller.ts
+│   ├── app.controller.spec.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   ├── main.ts
+│   ├── openai/
+│   │   ├── openai.service.ts
+│   │   └── openai.service.spec.ts
+│   └── whatsapp/
+│       ├── whatsapp.controller.ts
+│       ├── whatsapp.controller.spec.ts
+│       ├── whatsapp.service.ts
+│       └── whatsapp.service.spec.ts
+├── test/
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── package.json
+├── tsconfig.json
+├── tsconfig.build.json
+├── nest-cli.json
+├── eslint.config.mjs
+├── README.md
+```
+
+---
