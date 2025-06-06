@@ -4,6 +4,10 @@
 
 <h1 align="center">whatsapp bot with Open Ai integration</h1>
 
+<p align="center">
+  <b>A NestJS-based WhatsApp bot that leverages OpenAI's GPT models to generate intelligent, conversational responses. Easily connect your WhatsApp number, configure your OpenAI API key, and deploy a smart chatbot for customer support, automation, or fun!</b>
+</p>
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
